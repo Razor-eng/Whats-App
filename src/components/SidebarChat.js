@@ -1,8 +1,9 @@
-import { Avatar } from '@material-ui/core'
+import { Avatar, IconButton } from '@material-ui/core'
 import React, { useEffect, useState } from 'react'
 import './Sidebar.css'
 import db from '../firebase';
 import { Link } from 'react-router-dom';
+import { AddCircleOutline } from '@material-ui/icons';
 
 function SidebarChat({ id, name, addnewChat, img }) {
     const [seed, setSeed] = useState('');
@@ -10,6 +11,7 @@ function SidebarChat({ id, name, addnewChat, img }) {
     useEffect(() => {
         setSeed(Math.floor(Math.random() * 5000))
         db.collection('rooms').doc(id).collection('message').orderBy('timestamp', 'desc').onSnapshot(snapshot => setLastMessage(snapshot.docs.map(doc => doc.data())))
+        // eslint-disable-next-line
     }, [])
 
     const createChat = () => {
@@ -36,6 +38,11 @@ function SidebarChat({ id, name, addnewChat, img }) {
         ) : (
             <div className='addChat' onClick={createChat}>
                 <h2>Add New Chat</h2>
+                <h2 className='plus'>
+                    <IconButton>
+                        <AddCircleOutline />
+                    </IconButton>
+                </h2>
             </div >
         )
 

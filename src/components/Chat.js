@@ -84,13 +84,19 @@ function Chat() {
             </div>
 
             <div className="chat_footer">
-                <EmojiEmotions />
-                <AttachFile />
+                <div>
+                    <EmojiEmotions />
+                </div>
+                <div>
+                    <AttachFile />
+                </div>
                 <form onSubmit={sendMessage}>
                     <input type="text" placeholder='Type your message' value={input} onChange={e => setInput(e.target.value)} />
                     <input type="submit" />
                 </form>
-                <MicNoneOutlined />
+                <div>
+                    <MicNoneOutlined />
+                </div>
             </div>
         </div>
     )

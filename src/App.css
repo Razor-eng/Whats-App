@@ -20,3 +20,9 @@
   text-decoration: none;
   color: black;
 }
+@media only screen and (max-width: 232px) {
+  .app_body {
+    width: 100vw;
+    height: 100vh;
+  }
+}
