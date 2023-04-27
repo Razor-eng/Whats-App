@@ -46,11 +46,11 @@ function Chat() {
                 <Avatar src={img} />
                 <div className="chat_headerInfo">
                     <h3>{roomName}</h3>
-                    <p>
+                    {/* <p>
                         {
                             new Date(messages[messages.length - 1]?.timestamp.seconds * 1000).toLocaleTimeString()
                         }
-                    </p>
+                    </p> */}
                 </div>
                 <div className="chat_headerRight">
                     <IconButton>
