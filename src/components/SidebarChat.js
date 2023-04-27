@@ -39,7 +39,7 @@ function SidebarChat({ id, name, addnewChat, img }) {
             <div className='addChat' onClick={createChat}>
                 <h2>Add New Chat</h2>
                 <h2 className='plus'>
-                    <IconButton>
+                    <IconButton onClick={createChat}>
                         <AddCircleOutline />
                     </IconButton>
                 </h2>
