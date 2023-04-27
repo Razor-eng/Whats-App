@@ -1,0 +1,97 @@
+.sidebar {
+  flex: 0.35;
+  background-color: #fff;
+}
+.sidebar_header {
+  display: flex;
+  justify-content: space-between;
+  border-right: 1px solid lightgray;
+  padding: 10px;
+  background-color: #ededed;
+}
+.sidebar_headerLeft {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sidebar_headerLeft h3 {
+  font-weight: 300;
+}
+.sidebar_headerRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 10vw;
+}
+.sidebar_headerRight > svg {
+  font-size: 18px;
+}
+.sidebar_search {
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  height: 40px;
+  padding: 10px;
+}
+.sidebar_searchContainer {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  height: 35px;
+  border-radius: 20px;
+  width: 100%;
+}
+.sidebar_searchContainer input {
+  border: 0;
+  margin-left: 10px;
+  outline: 0;
+  width: 100%;
+}
+.sidebar_chats {
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+}
+
+.sidebarchat {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eaeaea;
+  padding: 10px;
+}
+.addChat {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eaeaea;
+  justify-content: center;
+  padding: 12px;
+  cursor: pointer;
+}
+.addChat:hover {
+  box-shadow: -1px 4px 20px -6px #000;
+  border-radius: 18px;
+}
+.addChat:active {
+  background-color: #ebebeb;
+}
+.addChat > h2 {
+  font-size: 20px;
+  margin-right: 18px;
+}
+.sidebarchat .MuiAvatar-circular {
+  width: 30px;
+  height: 30px;
+}
+.sidebarchat:hover {
+  cursor: pointer;
+  background-color: #ebebeb;
+}
+.sidebarchat_info {
+  margin-left: 15px;
+}
+.sidebarchat_info h2 {
+  font-size: 16px;
+}
+.sidebarchat_info p {
+  font-size: 12px;
+}
